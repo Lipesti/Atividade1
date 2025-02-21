@@ -40,7 +40,7 @@ public class ContaBancaria {
                 case 0:
                     double valorDeposito = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do depósito:"));
                     conta.deposito(valorDeposito);
-                    JOptionPane.showMessageDialog(null, "Saldo após depósito: " + conta.saldo);
+                    JOptionPane.showMessageDialog(null, nome + "\n Saldo após depósito: " + conta.saldo);
                     break;
                 case 1:
                     double valorSaque = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do saque:"));

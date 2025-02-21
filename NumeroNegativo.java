@@ -1,26 +1,35 @@
 import javax.swing.JOptionPane;
+import java.util.ArrayList;
+import java.util.List;
 
 public class NumeroNegativo {
 
     public static void main(String[] args) {
-        double numero = Double.parseDouble(JOptionPane.showInputDialog("Digite um número: "));
-        double novoNumero = 0;
+        List<Double> numeros = new ArrayList<>();
+        double numeroNegativo = 0; 
+        while (true) { 
+            try {
+                double numero = Double.parseDouble(JOptionPane.showInputDialog("Digite um número:"));
 
-        if (numero > 0) {
-            for (int i = 0; i < (int) numero; i++) { 
-                novoNumero = Double.parseDouble(JOptionPane.showInputDialog("Digite outro número: "));
-                if (novoNumero < 0) {
+                if (numero < 0) {
                     JOptionPane.showMessageDialog(null, "Número negativo, programa encerrado!");
-                    break;
-                    
+                    numeros.add(numero); 
+                    numeroNegativo = numero;
+                    break; 
+                } else {
+                    numeros.add(numero); 
                 }
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Entrada inválida. Digite um número.");
             }
-        } else {
-            JOptionPane.showMessageDialog(null, "Número inválido, programa encerrado!");
-
         }
 
-
+        
+        StringBuilder mensagem = new StringBuilder("Números digitados:\n");
+        for (double num : numeros) {
+            mensagem.append(num).append("\n");
+        }
+        mensagem.append("\nO número negativo inserido foi: ").append(numeroNegativo).append("\n");
+        JOptionPane.showMessageDialog(null, mensagem.toString());
     }
-    
 }

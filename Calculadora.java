@@ -51,7 +51,7 @@ public class Calculadora {
                 System.out.println("Soma dos números: " + numero1 + " + " + numero2 + " é = " + calc.soma());
                 break;
             case 2:
-                System.out.println("Subtração dos números: "+ numero1 + " - " + numero2 + "é = " + calc.subtracao());
+                System.out.println("Subtração dos números: "+ numero1 + " - " + numero2 + " é = " + calc.subtracao());
                 break;
             case 3:
                 System.out.println("Multiplicação dos números: " + numero1 + " * " + numero2 + " é = " + calc.multiplicacao());
