@@ -45,9 +45,9 @@ git clone https://github.com/Lipesti/Atividade1.git
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
 ## Observações:
+**É crucial mencionar que os programas neste repositório foram desenvolvidos utilizando tanto a classe Scanner para entrada de dados via console, quanto a classe JOptionPane para interação com o usuário através de caixas de diálogo.**
 
 Certifique-se de ter o Java Development Kit (JDK) instalado no seu sistema e configurado corretamente antes de executar os programas.
-Os nomes dos diretórios e arquivos nos exemplos acima são apenas ilustrativos. Você deve ajustá-los de acordo com a estrutura real do seu repositório.
 Para programas que possuem mais de um arquivo .java (como a Calculadora e a Conta Bancária), você precisará compilar todos os arquivos .java antes de executar o programa principal.
 
 
